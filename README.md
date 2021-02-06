@@ -2,7 +2,7 @@
 <a href="https://dscommunity.in">
 	<img src="https://github.com/Data-Science-Community-SRM/template/blob/master/Header.png?raw=true" width=80%/>
 </a>
-	<h2 align="center"> < Insert Project Title Here > </h2>
+	<h2 align="center"> < Food Recommendation System > </h2>
 	<h4 align="center"> < Insert Project Description Here > <h4>
 </p>
 
