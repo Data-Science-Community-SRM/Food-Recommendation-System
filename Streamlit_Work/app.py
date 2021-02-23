@@ -9,24 +9,32 @@ st.title("FOOOD Predictor")
 st.text("just to try out")
 st.image("foood.jpg")
 
-nav = st.sidebar.radio("Navigation",["Home","IF Necessary 1","If Necessary 2"])
-
-st.subheader("What Cuisine do you prefer?")
-cuisine = st.selectbox("Choose your favourite!",["Indian","Chinese","Continental","Middle Eastern",
-"Japenese"])
+## nav = st.sidebar.radio("Navigation",["Home","IF Necessary 1","If Necessary 2"])
 
 st.subheader("Whats your preference?")
-vegn = st.radio("Vegetables or none!",["veg","non-veg"],index = 1)
+vegn = st.radio("Vegetables or none!",["veg","non-veg"],index = 1) 
 
-#bruh = st.checkbox("you accept the T&C") gives boolean value
+st.subheader("What Cuisine do you prefer?")
+cuisine = st.selectbox("Choose your favourite!",['Healthy Food', 'Snack', 'Dessert', 'Japanese', 'Indian', 'French',
+       'Mexican', 'Italian', 'Chinese', 'Beverage', 'Thai'])
 
-st.subheader("How much do you like the dish?")  #RATING
+
+st.subheader("How well do you want the dish to be?")  #RATING
 val = st.slider("from poor to the best!",0,10)
 
-#veg nonver
-#cuisine
-#rating
-#display the food name data accordingly
-#dark mode
+food = pd.read_csv("../input/food.csv")
+ratings = pd.read_csv("../input/reviews.csv")
+combined = pd.merge(ratings, food, on='Food_ID')
+#ans = food.loc[(food.C_Type == cuisine) & (food.Veg_Non == vegn),['Name','C_Type','Veg_Non']]
 
-#st.write(foods)
+ans = combined.loc[(combined.C_Type == cuisine) & (combined.Veg_Non == vegn)& (combined.Review >= val),['Name','C_Type','Veg_Non']]
+names = ans['Name'].tolist()
+x = np.array(names)
+ans1 = np.unique(x)
+
+bruh = st.checkbox("Do you want to see our selection?")
+if bruh == True:
+    finallist = st.selectbox("Our Choices",ans1)
+
+
+
