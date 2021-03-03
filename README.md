@@ -33,7 +33,7 @@
 $ pip install streamlit
 ```
 
-* < directions to execute >
+* Executing the source file
 
 ```bash
 $ streamlit run app.py
