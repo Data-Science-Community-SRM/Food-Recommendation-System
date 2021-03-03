@@ -11,6 +11,7 @@
   [![UI ](https://img.shields.io/badge/User%20Interface-Link%20to%20UI-orange?style=flat-square&logo=appveyor)](https://foodrecomm.herokuapp.com/)
 
 ## Preview
+### The Project is Deployed at https://foodrecomm.herokuapp.com/
 ![streamlit-app-2021-03-03-18-03-82](https://user-images.githubusercontent.com/52796258/109809364-39908d00-7c4e-11eb-808e-4cc7773acfdb.gif)
 ## Functionalities
 - [ ]  User can choose vegetarian/non-vegetarian options
