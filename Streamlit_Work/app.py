@@ -25,11 +25,11 @@ st.subheader("How well do you want the dish to be?")  #RATING
 val = st.slider("from poor to the best!",0,10)
 
 food = pd.read_csv("../input/food.csv")
-ratings = pd.read_csv("../input/reviews.csv")
+ratings = pd.read_csv("../input/ratings.csv")
 combined = pd.merge(ratings, food, on='Food_ID')
 #ans = food.loc[(food.C_Type == cuisine) & (food.Veg_Non == vegn),['Name','C_Type','Veg_Non']]
 
-ans = combined.loc[(combined.C_Type == cuisine) & (combined.Veg_Non == vegn)& (combined.Review >= val),['Name','C_Type','Veg_Non']]
+ans = combined.loc[(combined.C_Type == cuisine) & (combined.Veg_Non == vegn)& (combined.Rating >= val),['Name','C_Type','Veg_Non']]
 names = ans['Name'].tolist()
 x = np.array(names)
 ans1 = np.unique(x)
@@ -41,7 +41,7 @@ if bruh == True:
 
 
 ##### IMPLEMENTING RECOMMENDER ######
-dataset = ratings.pivot_table(index='Food_ID',columns='User_ID',values='Review')
+dataset = ratings.pivot_table(index='Food_ID',columns='User_ID',values='Rating')
 dataset.fillna(0,inplace=True)
 csr_dataset = csr_matrix(dataset.values)
 dataset.reset_index(inplace=True)
@@ -74,7 +74,7 @@ display = food_recommendation(finallist)
 #x1 = np.array(names)
 #ans2 = np.unique(x1)
 if bruh == True:
-    bruh1 = st.checkbox("Our Recommendation : ")
+    bruh1 = st.checkbox("We also Recommend : ")
     if bruh1 == True:
         for i in display:
             st.write(i)
