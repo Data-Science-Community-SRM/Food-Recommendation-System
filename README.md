@@ -3,20 +3,20 @@
 	<img src="https://github.com/Data-Science-Community-SRM/template/blob/master/Header.png?raw=true" width=80%/>
 </a>
 	<h2 align="center"> Food Recomendation System </h2>
-	<h4 align="center"> < Insert Project Description Here > <h4>
+	<h4 align="center"> This is a machine learning web app, when executed, the client gets to choose a food item based on his own liking, and we recommend 10 more such similar foods through our recommendation system. Our system utilizes content-based collaborative filtering to implement the same. We provide a variety of cuisines to choose from with vegetarian/non-vegetarian options as well. <h4>
 </p>
 
 ---
-[![DOCS](https://img.shields.io/badge/Documentation-see%20docs-green?style=flat-square&logo=appveyor)](INSERT_LINK_FOR_DOCS_HERE) 
-  [![UI ](https://img.shields.io/badge/User%20Interface-Link%20to%20UI-orange?style=flat-square&logo=appveyor)](INSERT_UI_LINK_HERE)
+[![DOCS](https://img.shields.io/badge/Documentation-see%20docs-green?style=flat-square&logo=appveyor)](https://docs.streamlit.io/en/stable/) 
+  [![UI ](https://img.shields.io/badge/User%20Interface-Link%20to%20UI-orange?style=flat-square&logo=appveyor)](https://foodrecomm.herokuapp.com/)
 
 ## Preview
-- Add pictures or important highlights from the Project (if any)
+![streamlit-app-2021-03-03-18-03-82](https://user-images.githubusercontent.com/52796258/109809364-39908d00-7c4e-11eb-808e-4cc7773acfdb.gif)
 ## Functionalities
-- [ ]  < insert functionality >
-- [ ]  < insert functionality >
-- [ ]  < insert functionality >
-- [ ]  < insert functionality >
+- [ ]  User can choose vegetarian/non-vegetarian options
+- [ ]  User can select from a variety of cuisines
+- [ ]  The rating scale can be set by the user
+- [ ]  Our system recommends 10 food items similar to the user's initial choice
 
 <br>
 
@@ -24,18 +24,18 @@
 ## Instructions to run
 
 * Pre-requisites:
-	-  < insert pre-requisite >
-	-  < insert pre-requisite >
+	-  Streamlit
+	-  Python 3.6-3.9
 
-* < directions to install > 
+* Install Streamlit
 ```bash
-< insert code >
+$ pip install streamlit
 ```
 
 * < directions to execute >
 
 ```bash
-< insert code >
+$ streamlit run app.py
 ```
 
 ## Contributors
@@ -46,14 +46,14 @@
 
 <td>
 
-John Doe
+Ayush Jindal
 
 <p align="center">
-<img src = "https://github.com/Data-Science-Community-SRM/template/blob/master/logo-light.png?raw=true"  height="120" alt="Your Name Here (Insert Your Image Link In Src">
+<img src = "https://avatars.githubusercontent.com/u/64908612?s=400&u=0badfa617b6e46c5da46f5105f8605bcbeb12a50&v=4"  height="120" alt="Your Name Here (Insert Your Image Link In Src">
 </p>
 <p align="center">
-<a href = "https://github.com/person1"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
-<a href = "https://www.linkedin.com/in/person1">
+<a href = "https://github.com/ayushjindal23"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
+<a href = "https://www.linkedin.com/in/ayushjindal23/">
 <img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
 </a>
 </p>
@@ -62,14 +62,14 @@ John Doe
 
 <td>
 
-John Doe
+Joshikha M
 
 <p align="center">
-<img src = "https://github.com/Data-Science-Community-SRM/template/blob/master/logo-light.png?raw=true"  height="120" alt="Your Name Here (Insert Your Image Link In Src">
+<img src = "https://avatars.githubusercontent.com/u/77103140?s=400&u=27715b653bfec4f5723e48fc5543662a11369eb8&v=4"  height="120" alt="Your Name Here (Insert Your Image Link In Src">
 </p>
 <p align="center">
-<a href = "https://github.com/person2"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
-<a href = "https://www.linkedin.com/in/person2">
+<a href = "https://github.com/mjoshikha"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
+<a href = "https://www.linkedin.com/in/mjoshikha1111/">
 <img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
 </a>
 </p>
@@ -79,14 +79,14 @@ John Doe
 
 <td>
 
-John Doe
+Suvodeep Sinha
 
 <p align="center">
-<img src = "https://github.com/Data-Science-Community-SRM/template/blob/master/logo-light.png?raw=true"  height="120" alt="Your Name Here (Insert Your Image Link In Src">
+<img src = "https://avatars.githubusercontent.com/u/52796258?s=400&u=ac91850aac9a86d6124283d5435ad0a1a7cdbe53&v=4"  height="120" alt="Your Name Here (Insert Your Image Link In Src">
 </p>
 <p align="center">
-<a href = "https://github.com/person3"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
-<a href = "https://www.linkedin.com/in/person3">
+<a href = "https://github.com/Suvoo"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
+<a href = "https://www.linkedin.com/in/suvodeep-sinha-59652418b/">
 <img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
 </a>
 </p>
